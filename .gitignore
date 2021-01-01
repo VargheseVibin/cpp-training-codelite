@@ -1,0 +1,7 @@
+*.exe
+.vscode/*
+*.mk
+*.project
+*.txt
+*.o
+*.d
