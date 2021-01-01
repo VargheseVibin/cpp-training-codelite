@@ -5,3 +5,6 @@
 *.txt
 *.o
 *.d
+*.tags
+*.workspace
+*.session
