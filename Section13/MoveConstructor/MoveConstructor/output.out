@@ -1,0 +1,66 @@
+==============================================================================Run on 2-Jan-2021 2130 IST(Win10)============================================================================
+      With the Move Const                                                           Without Move Const                                                  With Move Const & "noexcept"
+===========================================================================================================================================================================================
+Constructor called for:10                                                    Constructor called for:10                                               Constructor called for:10
+Move Constcutor - Moving resource:10                                         Constructor called for:10                                               Move Constcutor - Moving resource:10
+Destructor freeing data for nullptr                                          Copy Constructor --(DEEP COPY)-- called for:10                          Destructor freeing data for nullptr
+Constructor called for:20                                                    Desctructor freeing data for 10                                         Constructor called for:20
+Move Constcutor - Moving resource:20                                         Constructor called for:20                                               Move Constcutor - Moving resource:20
+Constructor called for:10                                                    Constructor called for:20                                               Move Constcutor - Moving resource:10
+Copy Constructor --(DEEP COPY)-- called for:10                               Copy Constructor --(DEEP COPY)-- called for:20                          Destructor freeing data for nullptr
+Desctructor freeing data for 10                                              Constructor called for:10                                               Destructor freeing data for nullptr
+Destructor freeing data for nullptr                                          Copy Constructor --(DEEP COPY)-- called for:10                          Constructor called for:30
+Constructor called for:30                                                    Desctructor freeing data for 10                                         Move Constcutor - Moving resource:30
+Move Constcutor - Moving resource:30                                         Desctructor freeing data for 20                                         Move Constcutor - Moving resource:10
+Constructor called for:10                                                    Constructor called for:30                                               Destructor freeing data for nullptr
+Copy Constructor --(DEEP COPY)-- called for:10                               Constructor called for:30                                               Move Constcutor - Moving resource:20
+Constructor called for:20                                                    Copy Constructor --(DEEP COPY)-- called for:30                          Destructor freeing data for nullptr
+Copy Constructor --(DEEP COPY)-- called for:20                               Constructor called for:10                                               Destructor freeing data for nullptr
+Desctructor freeing data for 10                                              Copy Constructor --(DEEP COPY)-- called for:10                          Constructor called for:40
+Desctructor freeing data for 20                                              Constructor called for:20                                               Move Constcutor - Moving resource:40
+Destructor freeing data for nullptr                                          Copy Constructor --(DEEP COPY)-- called for:20                          Destructor freeing data for nullptr
+Constructor called for:40                                                    Desctructor freeing data for 10                                         Constructor called for:50
+Move Constcutor - Moving resource:40                                         Desctructor freeing data for 20                                         Move Constcutor - Moving resource:50
+Destructor freeing data for nullptr                                          Desctructor freeing data for 30                                         Move Constcutor - Moving resource:10
+Constructor called for:50                                                    Constructor called for:40                                               Destructor freeing data for nullptr
+Move Constcutor - Moving resource:50                                         Constructor called for:40                                               Move Constcutor - Moving resource:20
+Constructor called for:10                                                    Copy Constructor --(DEEP COPY)-- called for:40                          Destructor freeing data for nullptr
+Copy Constructor --(DEEP COPY)-- called for:10                               Desctructor freeing data for 40                                         Move Constcutor - Moving resource:30
+Constructor called for:20                                                    Constructor called for:50                                               Destructor freeing data for nullptr
+Copy Constructor --(DEEP COPY)-- called for:20                               Constructor called for:50                                               Move Constcutor - Moving resource:40
+Constructor called for:30                                                    Copy Constructor --(DEEP COPY)-- called for:50                          Destructor freeing data for nullptr
+Copy Constructor --(DEEP COPY)-- called for:30                               Constructor called for:10                                               Destructor freeing data for nullptr
+Constructor called for:40                                                    Copy Constructor --(DEEP COPY)-- called for:10                          Constructor called for:60
+Copy Constructor --(DEEP COPY)-- called for:40                               Constructor called for:20                                               Move Constcutor - Moving resource:60
+Desctructor freeing data for 10                                              Copy Constructor --(DEEP COPY)-- called for:20                          Destructor freeing data for nullptr
+Desctructor freeing data for 20                                              Constructor called for:30                                               Constructor called for:70
+Desctructor freeing data for 30                                              Copy Constructor --(DEEP COPY)-- called for:30                          Move Constcutor - Moving resource:70
+Desctructor freeing data for 40                                              Constructor called for:40                                               Destructor freeing data for nullptr
+Destructor freeing data for nullptr                                          Copy Constructor --(DEEP COPY)-- called for:40                          Constructor called for:80
+Constructor called for:60                                                    Desctructor freeing data for 10                                         Move Constcutor - Moving resource:80
+Move Constcutor - Moving resource:60                                         Desctructor freeing data for 20                                         Destructor freeing data for nullptr
+Destructor freeing data for nullptr                                          Desctructor freeing data for 30                                         Desctructor freeing data for 10
+Constructor called for:70                                                    Desctructor freeing data for 40                                         Desctructor freeing data for 20
+Move Constcutor - Moving resource:70                                         Desctructor freeing data for 50                                         Desctructor freeing data for 30
+Destructor freeing data for nullptr                                          Constructor called for:60                                               Desctructor freeing data for 40
+Constructor called for:80                                                    Constructor called for:60                                               Desctructor freeing data for 50
+Move Constcutor - Moving resource:80                                         Copy Constructor --(DEEP COPY)-- called for:60                          Desctructor freeing data for 60
+Destructor freeing data for nullptr                                          Desctructor freeing data for 60                                         Desctructor freeing data for 70
+Desctructor freeing data for 10                                              Constructor called for:70                                               Desctructor freeing data for 80
+Desctructor freeing data for 20                                              Constructor called for:70                                               Press any key to continue . . .
+Desctructor freeing data for 30                                              Copy Constructor --(DEEP COPY)-- called for:70
+Desctructor freeing data for 40                                              Desctructor freeing data for 70
+Desctructor freeing data for 50                                              Constructor called for:80
+Desctructor freeing data for 60                                              Constructor called for:80
+Desctructor freeing data for 70                                              Copy Constructor --(DEEP COPY)-- called for:80
+Desctructor freeing data for 80                                              Desctructor freeing data for 80
+Press any key to continue . . .                                              Desctructor freeing data for 10
+                                                                             Desctructor freeing data for 20
+                                                                             Desctructor freeing data for 30
+                                                                             Desctructor freeing data for 40
+                                                                             Desctructor freeing data for 50
+                                                                             Desctructor freeing data for 60
+                                                                             Desctructor freeing data for 70
+                                                                             Desctructor freeing data for 80
+                                                                             Press any key to continue . . .
+
