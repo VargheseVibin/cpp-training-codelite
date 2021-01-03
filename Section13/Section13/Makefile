@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ ConstInClasses - Debug ]----------"
-	@cd "D:\cPP\CodeLite\cpp-training-codelite\Section13\ConstInClasses\ConstInClasses" && "$(MAKE)" -f  "ConstInClasses.mk"
+	@echo "----------Building project:[ StaticClassMembers - Debug ]----------"
+	@cd "D:\cPP\CodeLite\cpp-training-codelite\Section13\StaticClassMembers\StaticClassMembers" && "$(MAKE)" -f  "StaticClassMembers.mk"
 clean:
-	@echo "----------Cleaning project:[ ConstInClasses - Debug ]----------"
-	@cd "D:\cPP\CodeLite\cpp-training-codelite\Section13\ConstInClasses\ConstInClasses" && "$(MAKE)" -f  "ConstInClasses.mk" clean
+	@echo "----------Cleaning project:[ StaticClassMembers - Debug ]----------"
+	@cd "D:\cPP\CodeLite\cpp-training-codelite\Section13\StaticClassMembers\StaticClassMembers" && "$(MAKE)" -f  "StaticClassMembers.mk" clean
