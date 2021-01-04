@@ -9,7 +9,7 @@ private:
 public:
     int getData() { return *data ;}
     void setData(int d) { *data = d ; }
-    //Const ProtoType
+    //Constructor ProtoType
     Move(int d);
     //Copy Const ProtoType
     Move(const Move &source) ;
