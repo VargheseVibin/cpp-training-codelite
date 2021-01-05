@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ MyString-start - Debug ]----------"
-	@cd "D:\cPP\CodeLite\Section14\MyString-start\MyString-start" && "$(MAKE)" -f  "MyString-start.mk"
+	@echo "----------Building project:[ Mystring-copy-assignment - Debug ]----------"
+	@cd "D:\cPP\CodeLite\cpp-training-codelite\Section14\Mystring-copy-assignment\Mystring-copy-assignment" && "$(MAKE)" -f  "Mystring-copy-assignment.mk"
 clean:
-	@echo "----------Cleaning project:[ MyString-start - Debug ]----------"
-	@cd "D:\cPP\CodeLite\Section14\MyString-start\MyString-start" && "$(MAKE)" -f  "MyString-start.mk" clean
+	@echo "----------Cleaning project:[ Mystring-copy-assignment - Debug ]----------"
+	@cd "D:\cPP\CodeLite\cpp-training-codelite\Section14\Mystring-copy-assignment\Mystring-copy-assignment" && "$(MAKE)" -f  "Mystring-copy-assignment.mk" clean

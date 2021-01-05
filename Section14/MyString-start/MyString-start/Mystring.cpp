@@ -2,7 +2,6 @@
 #include "Mystring.h"
 #include <iostream>
 
-
 Mystring::Mystring() 
     :str{nullptr} {
         str=new char[1];
