@@ -14,7 +14,7 @@ public:
     bool operator==(const Mystring &rhs);
     Mystring operator-();
     Mystring operator+(const Mystring &obj);
-    void display();
+    void display() const;
     ~Mystring();
 
 };

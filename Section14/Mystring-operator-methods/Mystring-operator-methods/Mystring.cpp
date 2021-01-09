@@ -70,12 +70,9 @@ Mystring Mystring::operator-() {
     }
     buff[std::strlen(str)]='\0';
     Mystring temp {buff};
+    delete [] buff ; 
     return temp;
     
-}
-
-void Mystring::display() {
-    std::cout << "String is:" << str << std::endl ; 
 }
 
 Mystring Mystring::operator+(const Mystring &obj) {
@@ -89,6 +86,9 @@ Mystring Mystring::operator+(const Mystring &obj) {
     
 }
 
+void Mystring::display() const {
+    std::cout << "Mystring:" << str << std::endl ; 
+}
 
 //    Mystring();
 //    Mystring(const char* s);
