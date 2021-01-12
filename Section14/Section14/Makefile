@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ Mystring-insertion-extraction - Debug ]----------"
-	@cd "D:\cPP\CodeLite\cpp-training-codelite\Section14\Mystring-insertion-extraction\Mystring-insertion-extraction" && "$(MAKE)" -f  "Mystring-insertion-extraction.mk"
+	@echo "----------Building project:[ Challenge-Solution-Mem-Fn - Debug ]----------"
+	@cd "D:\cPP\CodeLite\cpp-training-codelite\Section14\Challenge-Solution-Mem-Fn\Challenge-Solution-Mem-Fn" && "$(MAKE)" -f  "Challenge-Solution-Mem-Fn.mk"
 clean:
-	@echo "----------Cleaning project:[ Mystring-insertion-extraction - Debug ]----------"
-	@cd "D:\cPP\CodeLite\cpp-training-codelite\Section14\Mystring-insertion-extraction\Mystring-insertion-extraction" && "$(MAKE)" -f  "Mystring-insertion-extraction.mk" clean
+	@echo "----------Cleaning project:[ Challenge-Solution-Mem-Fn - Debug ]----------"
+	@cd "D:\cPP\CodeLite\cpp-training-codelite\Section14\Challenge-Solution-Mem-Fn\Challenge-Solution-Mem-Fn" && "$(MAKE)" -f  "Challenge-Solution-Mem-Fn.mk" clean
