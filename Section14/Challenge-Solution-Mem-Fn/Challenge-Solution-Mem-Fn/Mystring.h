@@ -22,8 +22,12 @@ public:
     bool operator!=(const Mystring &s);             //Inequaility Check returning True
     bool operator>(const Mystring &s);              //GT Check returning True
     bool operator<(const Mystring &s);              //LT Check returning True
+    Mystring& operator+=(const Mystring &s);        //Concat and Assign s1 += s2
+    Mystring& operator*=(size_t &&n);               //Concat N times and assign s1 *= 3;   s1 = s1 * 3;
     void display() const;                           //Display str
-    Mystring operator*(size_t &n);                  //"123"*3 = "123123123"
+    Mystring operator*(size_t &&n);                 //"123"*3 = "123123123"
+    Mystring& operator++();                         // pre-increment    ++s1;
+    Mystring operator++(int);                       // post-increment   s1++;
 };
 
 #endif // _MYSTRING_H_
