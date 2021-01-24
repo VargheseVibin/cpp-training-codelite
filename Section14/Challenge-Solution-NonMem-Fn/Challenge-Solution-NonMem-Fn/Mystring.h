@@ -3,6 +3,11 @@
 
 class Mystring
 {
+    friend bool operator==(const Mystring& lhs, const Mystring& rhs);
+    friend bool operator!=(const Mystring& lhs, const Mystring& rhs);
+    friend bool operator>(const Mystring& lhs, const Mystring& rhs);
+    friend bool operator<(const Mystring& lhs, const Mystring& rhs);
+    friend Mystring operator-(const Mystring& s) ; 
 private:
     char* str ; 
 public:
@@ -14,9 +19,14 @@ public:
     Mystring& operator=(const Mystring &str);           //Copy Assignment
     Mystring& operator=(Mystring &&str);                //Move Assignment
     
+//    Mystring& operator=(const Mystring &s);         //Copy Assignment                           b=a
+//    Mystring& operator=(Mystring &&s);              //Move Assignment                           b=Mystring("Febin")
+    
     void display()  ; 
     
     ~Mystring();
+    
+
 
 };
 

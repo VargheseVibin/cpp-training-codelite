@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Mystring.h"
+#include "Mystring.h"clTabCtrl
 
 using namespace std;
 
@@ -28,7 +28,7 @@ int main() {
     cout << (a>b) << endl;              // false
     Mystring s1 {"FRANK"};
     s1 = -s1;       
-    cout << s1 << endl;                 // frank              
+    cout << s1 << endl;                 // frank
 
 //    s1.display() ; 
     s1 = s1 + "*****";

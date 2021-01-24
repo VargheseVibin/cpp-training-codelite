@@ -3,17 +3,17 @@
 ## any manual changes will be erased      
 ##
 ## Debug
-ProjectName            :=Challenge-Solution-NonMem-Fn
+ProjectName            :=CopyConstructorAssignmentOperator
 ConfigurationName      :=Debug
-WorkspacePath          :=D:/cPP/CodeLite/cpp-training-codelite/Section14/Section14
-ProjectPath            :=D:/cPP/CodeLite/cpp-training-codelite/Section14/Challenge-Solution-NonMem-Fn/Challenge-Solution-NonMem-Fn
+WorkspacePath          :=D:/cPP/CodeLite/cpp-training-codelite/Section15
+ProjectPath            :=D:/cPP/CodeLite/cpp-training-codelite/Section15/CopyConstructorAssignmentOperator
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Vibin_Varghese
-Date                   :=23/01/2021
+Date                   :=24/01/2021
 CodeLitePath           :=D:/CodeLite
 LinkerName             :=D:/MingW64/bin/g++.exe
 SharedObjectLinkerName :=D:/MingW64/bin/g++.exe -shared -fPIC
@@ -32,7 +32,7 @@ Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
 PreprocessOnlySwitch   :=-E
-ObjectsFileList        :="Challenge-Solution-NonMem-Fn.txt"
+ObjectsFileList        :="CopyConstructorAssignmentOperator.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=makedir
 RcCmpOptions           := 
@@ -62,7 +62,7 @@ AS       := D:/MingW64/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=D:\CodeLite
-Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Mystring.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
 
 
 
@@ -95,15 +95,9 @@ PreBuild:
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/cPP/CodeLite/cpp-training-codelite/Section14/Challenge-Solution-NonMem-Fn/Challenge-Solution-NonMem-Fn/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/cPP/CodeLite/cpp-training-codelite/Section15/CopyConstructorAssignmentOperator/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
-
-$(IntermediateDirectory)/Mystring.cpp$(ObjectSuffix): Mystring.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Mystring.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Mystring.cpp$(DependSuffix) -MM Mystring.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/cPP/CodeLite/cpp-training-codelite/Section14/Challenge-Solution-NonMem-Fn/Challenge-Solution-NonMem-Fn/Mystring.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Mystring.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Mystring.cpp$(PreprocessSuffix): Mystring.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Mystring.cpp$(PreprocessSuffix) Mystring.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
