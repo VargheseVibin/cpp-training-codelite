@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ UsingOverride - Debug ]----------"
-	@cd "UsingOverride" && "$(MAKE)" -f  "UsingOverride.mk"
+	@echo "----------Building project:[ Interfaces-complete - Debug ]----------"
+	@cd "Interfaces-complete" && "$(MAKE)" -f  "Interfaces-complete.mk"
 clean:
-	@echo "----------Cleaning project:[ UsingOverride - Debug ]----------"
-	@cd "UsingOverride" && "$(MAKE)" -f  "UsingOverride.mk" clean
+	@echo "----------Cleaning project:[ Interfaces-complete - Debug ]----------"
+	@cd "Interfaces-complete" && "$(MAKE)" -f  "Interfaces-complete.mk" clean
