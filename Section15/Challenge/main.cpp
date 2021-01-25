@@ -50,7 +50,7 @@ int main() {
     sAccounts.push_back(SavingsAccount{});
     sAccounts.push_back(SavingsAccount{"Jon Stewart"});
     sAccounts.push_back(SavingsAccount{"John Oliver",1500});
-    sAccounts.push_back(SavingsAccount{"Stephen COlbert",4000,2.6});
+    sAccounts.push_back(SavingsAccount{"Stephen Colbert",4000,2.6});
 
     display(sAccounts);
     deposit(sAccounts,1500);
