@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ Interfaces-complete - Debug ]----------"
-	@cd "Interfaces-complete" && "$(MAKE)" -f  "Interfaces-complete.mk"
+	@echo "----------Building project:[ ChallengeSolution - Debug ]----------"
+	@cd "ChallengeSolution" && "$(MAKE)" -f  "ChallengeSolution.mk"
 clean:
-	@echo "----------Cleaning project:[ Interfaces-complete - Debug ]----------"
-	@cd "Interfaces-complete" && "$(MAKE)" -f  "Interfaces-complete.mk" clean
+	@echo "----------Cleaning project:[ ChallengeSolution - Debug ]----------"
+	@cd "ChallengeSolution" && "$(MAKE)" -f  "ChallengeSolution.mk" clean
