@@ -14,8 +14,10 @@ private:
     static constexpr double defaultSavingsAccInterestRate = 0.0; 
 public:
     SavingsAccount(std::string s=defaultName,double b=defaultBal,double i=defaultSavingsAccInterestRate);
-    virtual bool deposit(double a);
-    ~SavingsAccount();
+    virtual bool deposit(double a) override;
+    virtual bool withdraw(double a) override;
+    virtual void print(std::ostream& os) const override;
+    virtual ~SavingsAccount();
 
 };
 

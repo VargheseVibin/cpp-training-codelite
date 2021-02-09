@@ -26,9 +26,11 @@ bool Account::withdraw(double a) {
     }
 }
 
-std::ostream& operator<<(std::ostream& os, const Account& a) {
-    os << "[ Account Name: " << a.accName << ", Balance:" << a.accBalance << " ]" << std::endl ; 
+void Account::print(std::ostream& os) const {
+    os << "[ Account Name: " << this->accName << ", Balance:" << this->accBalance << " ]" << std::endl ;     
 }
+
+
 Account::~Account()
 {
 }

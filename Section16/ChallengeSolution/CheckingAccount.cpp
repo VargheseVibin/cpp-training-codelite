@@ -16,6 +16,10 @@ bool CheckingAccount::withdraw(double a)  {
     return Account::withdraw(a);
 }
 
-std::ostream& operator<<(std::ostream& os, CheckingAccount& ca) {
-    os << "[ Checking Account Name: " << ca.accName << ", Balance:" << ca.accBalance << " ]" << std::endl ; 
+bool CheckingAccount::deposit(double a) {
+    return Account::deposit(a);
+}
+
+void CheckingAccount::print(std::ostream& os) const{
+    os << "[ Checking Account Name: " << this->accName << ", Balance:" << this->accBalance << " ]" << std::endl ; 
 }

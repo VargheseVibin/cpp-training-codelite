@@ -6,7 +6,6 @@
 
 class CheckingAccount: public Account
 {
-friend std::ostream& operator<<(std::ostream& os, CheckingAccount& a) ; 
 protected:
 private:
     static constexpr double withdrawlFees=1.50;
@@ -14,8 +13,10 @@ private:
     static constexpr double defaultBal=0.0;
 public:
     CheckingAccount(std::string n=defaultName, double a=defaultBal);
-    ~CheckingAccount();
-    virtual bool withdraw(double a);
+    virtual ~CheckingAccount();
+    virtual bool withdraw(double a) override;
+    virtual bool deposit(double a) override;
+    virtual void print(std::ostream& os) const override;
 
 };
 

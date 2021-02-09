@@ -2,10 +2,10 @@
 #define _ACCOUNT_H_
 #include <iostream>
 #include <string>
+#include "I_Printable.h"
 
-class Account
+class Account:public I_Printable
 {
-friend std::ostream& operator<<(std::ostream &os, const Account &a);
 private:
     static constexpr char* defaultName="UnNamed Account";
     static constexpr double defaultBal=0.0;
@@ -16,7 +16,8 @@ public:
     Account(std::string n=defaultName,double b=defaultBal);
     virtual bool deposit(double a)= 0;
     virtual bool withdraw(double a) = 0;
-    ~Account();
+    virtual void print(std::ostream& os) const = 0 ; 
+    virtual ~Account();
 
 };
 

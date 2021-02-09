@@ -11,13 +11,17 @@ SavingsAccount::SavingsAccount(std::string s, double b, double i)
 bool SavingsAccount::deposit(double a)  {
     a=(a+(a*(savingsAccInterestRate/100)));
     return Account::deposit(a);
-        
+}
+
+bool SavingsAccount::withdraw(double a) {
+    return Account::withdraw(a) ; 
 }
 
 
-std::ostream& operator<<(std::ostream& os, const SavingsAccount& sa) {
-    os << "[ Savings Account Name: " << sa.accName << ", Balance:" << sa.accBalance << ", Interest Rate:" << sa.savingsAccInterestRate <<"% ]" << std::endl ; 
+void SavingsAccount::print(std::ostream& os) const {
+    os << "[ Savings Account Name: " << this->accName << ", Balance:" << this->accBalance << ", Interest Rate:" << this->savingsAccInterestRate <<"% ]" << std::endl ; 
 }
+
 
 SavingsAccount::~SavingsAccount()
 {

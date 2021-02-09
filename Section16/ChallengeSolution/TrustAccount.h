@@ -18,9 +18,10 @@ private:
     static constexpr double bonusAmount {50.0};
 public:
     TrustAccount(std::string n=defaultName, double a=defaultBal);
-    ~TrustAccount();
-    virtual bool withdraw(double a);
-    virtual bool deposit(double a);
+    virtual ~TrustAccount()=default;
+    virtual bool withdraw(double a) override;
+    virtual bool deposit(double a) override;
+    virtual void print(std::ostream& os) const override;
 
 };
 

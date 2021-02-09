@@ -7,12 +7,6 @@ TrustAccount::TrustAccount(std::string n, double a)
     :Account(n,a),withdrawlCount{0}   {
 }
 
-TrustAccount::~TrustAccount()   {
-}
-
-std::ostream& operator<<(std::ostream& os, TrustAccount& ta) {
-    os << "[ Trust Account Name: " << ta.accName << ", Balance:" << ta.accBalance << ", Withdrawl-Count: "<< ta.withdrawlCount << " ]" << std::endl ; 
-}
 
 bool TrustAccount::withdraw(double a)  {
     if (withdrawlCount>=withdrawlLimit)
@@ -33,4 +27,8 @@ bool TrustAccount::deposit(double a)  {
     if(a>=bonusThreshold)
         a+=bonusAmount ;
     return Account::deposit(a);
+}
+
+void TrustAccount::print(std::ostream& os) const {
+    os << "[ Trust Account Name: " << this->accName << ", Balance:" << this->accBalance << ", Withdrawl-Count: "<< this->withdrawlCount << " ]" << std::endl ; 
 }
