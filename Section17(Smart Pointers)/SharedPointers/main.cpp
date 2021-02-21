@@ -41,6 +41,8 @@ int main() {
     // use_count – the number of shared_ptr objects
     // managing the heap object
    
+
+   
 //    std::shared_ptr<int> p1 {new int {100} };
 //    std::cout << "Use count: "<< p1.use_count () << std::endl; 		// 1
 //   
@@ -70,7 +72,7 @@ int main() {
 //    std::cout << "(5) Use count: " << ptr.use_count() <<std:: endl;
 
     std::cout << "\n==========================================" << std::endl;
-    std::shared_ptr<Account> acc1 = std::make_shared<TrustAccount>("Larry", 10000, 3.1);
+    std::shared_ptr<Account> acc1 = std::make_shared<TrustAccount>("Larry", 10000);
     std::shared_ptr<Account> acc2 = std::make_shared<CheckingAccount>("Moe", 5000);
     std::shared_ptr<Account> acc3 = std::make_shared<SavingsAccount>("Curly", 6000);
     
